@@ -111,6 +111,7 @@ namespace GiuaKi_LT_Desktop
                 Luu_BT.Enabled = false;
                 dataGridView1_SelectionChanged(null, null);
             }
+            //com
         }
 
         private void Luu_BT_Click(object sender, System.EventArgs e)
