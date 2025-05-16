@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
+            MaSo_tx = new TextBox();
+            HoTen_tx = new TextBox();
+            NgaySinh_tx = new TextBox();
+            Email_tx = new TextBox();
             MaSo_label = new Label();
             HoTen_label = new Label();
             NgaySinh_Label = new Label();
@@ -47,33 +47,33 @@
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // MaSo_tx
             // 
-            textBox1.Location = new Point(139, 23);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(595, 23);
-            textBox1.TabIndex = 0;
+            MaSo_tx.Location = new Point(139, 23);
+            MaSo_tx.Name = "MaSo_tx";
+            MaSo_tx.Size = new Size(595, 23);
+            MaSo_tx.TabIndex = 0;
             // 
-            // textBox2
+            // HoTen_tx
             // 
-            textBox2.Location = new Point(139, 73);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(595, 23);
-            textBox2.TabIndex = 1;
+            HoTen_tx.Location = new Point(139, 73);
+            HoTen_tx.Name = "HoTen_tx";
+            HoTen_tx.Size = new Size(595, 23);
+            HoTen_tx.TabIndex = 1;
             // 
-            // textBox3
+            // NgaySinh_tx
             // 
-            textBox3.Location = new Point(139, 123);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(595, 23);
-            textBox3.TabIndex = 2;
+            NgaySinh_tx.Location = new Point(139, 123);
+            NgaySinh_tx.Name = "NgaySinh_tx";
+            NgaySinh_tx.Size = new Size(595, 23);
+            NgaySinh_tx.TabIndex = 2;
             // 
-            // textBox4
+            // Email_tx
             // 
-            textBox4.Location = new Point(139, 168);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(595, 23);
-            textBox4.TabIndex = 3;
+            Email_tx.Location = new Point(139, 168);
+            Email_tx.Name = "Email_tx";
+            Email_tx.Size = new Size(595, 23);
+            Email_tx.TabIndex = 3;
             // 
             // MaSo_label
             // 
@@ -189,10 +189,10 @@
             Controls.Add(NgaySinh_Label);
             Controls.Add(HoTen_label);
             Controls.Add(MaSo_label);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(Email_tx);
+            Controls.Add(NgaySinh_tx);
+            Controls.Add(HoTen_tx);
+            Controls.Add(MaSo_tx);
             Name = "Form1";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -202,10 +202,10 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox MaSo_tx;
+        private TextBox HoTen_tx;
+        private TextBox NgaySinh_tx;
+        private TextBox Email_tx;
         private Label MaSo_label;
         private Label HoTen_label;
         private Label NgaySinh_Label;
