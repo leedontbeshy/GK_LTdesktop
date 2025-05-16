@@ -1,0 +1,17 @@
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\bin\Debug\net8.0-windows\GiuaKi_LT_Desktop.exe
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\bin\Debug\net8.0-windows\GiuaKi_LT_Desktop.deps.json
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\bin\Debug\net8.0-windows\GiuaKi_LT_Desktop.runtimeconfig.json
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\bin\Debug\net8.0-windows\GiuaKi_LT_Desktop.dll
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\bin\Debug\net8.0-windows\GiuaKi_LT_Desktop.pdb
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\GiuaKi_LT_Desktop.Form1.resources
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\GiuaKi_LT_Desktop.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\GiuaKi_LT_Desktop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\GiuaKi_LT_Desktop.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\GiuaKi_LT_Desktop.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\GiuaKi_LT_Desktop.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\GiuaKi_LT_Desktop.sourcelink.json
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\GiuaKi_LT_Desktop.dll
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\refint\GiuaKi_LT_Desktop.dll
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\GiuaKi_LT_Desktop.pdb
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\GiuaKi_LT_Desktop.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\giuaky-desktop-new\GK_LTdesktop\GiuaKi_LT_Desktop\obj\Debug\net8.0-windows\ref\GiuaKi_LT_Desktop.dll
