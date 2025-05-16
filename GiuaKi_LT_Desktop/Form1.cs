@@ -6,7 +6,8 @@ namespace GiuaKi_LT_Desktop
 {
     public partial class Form1 : Form
     {
-        private string filePath = "dulieu.txt";
+        private string filePath = @"C:\Users\Administrator\source\repos\GK_LTdesktop1\GiuaKi_LT_Desktop\dulieu.txt";
+
         private List<NhanVien> danhSachNhanVien = new();
         private bool isAdding = false;
 
@@ -22,7 +23,6 @@ namespace GiuaKi_LT_Desktop
         {
             InitializeComponent();
 
-           
             if (dataGridView1.Columns.Count == 0)
             {
                 dataGridView1.Columns.Add("MaSo", "Mã số");
@@ -46,7 +46,7 @@ namespace GiuaKi_LT_Desktop
                 var lines = File.ReadAllLines(filePath);
                 foreach (var line in lines)
                 {
-                    var parts = line.Split('|');
+                    var parts = line.Split(';');
                     if (parts.Length == 4)
                     {
                         danhSachNhanVien.Add(new NhanVien
@@ -77,7 +77,7 @@ namespace GiuaKi_LT_Desktop
             {
                 foreach (var nv in danhSachNhanVien)
                 {
-                    writer.WriteLine($"{nv.MaSo}|{nv.HoTen}|{nv.NgaySinh}|{nv.Email}");
+                    writer.WriteLine($"{nv.MaSo};{nv.HoTen};{nv.NgaySinh};{nv.Email}"); // Đã sửa thành dấu ';'
                 }
             }
         }
@@ -139,7 +139,6 @@ namespace GiuaKi_LT_Desktop
             base.OnFormClosing(e);
         }
 
-       
         private void label1_Click(object sender, System.EventArgs e) { }
         private void button1_Click(object sender, System.EventArgs e) { }
         private void button1_Click_1(object sender, System.EventArgs e) { }
