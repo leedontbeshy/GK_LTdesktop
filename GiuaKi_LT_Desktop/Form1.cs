@@ -11,16 +11,18 @@ namespace GiuaKi_LT_Desktop
             ConnectToDatabase();
         }
 
+        //add a new databse
+
         private void ConnectToDatabase()
         {
-            // Path to your SQLite database file
+            
             var connectionString = "Data Source=your_database_file.db";
 
             using (var connection = new SqliteConnection(connectionString))
             {
                 connection.Open();
 
-                // Example: create a table if it doesn't exist
+                
                 var command = connection.CreateCommand();
                 command.CommandText =
                 @"
@@ -31,7 +33,7 @@ namespace GiuaKi_LT_Desktop
                     ";
                 command.ExecuteNonQuery();
 
-                // You can now execute queries using this connection
+                
             }
         }
     }
