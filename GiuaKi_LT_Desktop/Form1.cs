@@ -6,8 +6,7 @@ namespace GiuaKi_LT_Desktop
 {
     public partial class Form1 : Form
     {
-        private string filePath = Path.Combine(Application.StartupPath, "dulieu.txt");
-
+        private string filePath = @"C:\Users\Administrator\source\repos\GK_LTdesktop1\GiuaKi_LT_Desktop\dulieu.txt";
 
         private List<NhanVien> danhSachNhanVien = new();
         private bool isAdding = false;
