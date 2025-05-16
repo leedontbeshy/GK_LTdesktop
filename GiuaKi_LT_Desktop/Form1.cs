@@ -11,18 +11,18 @@ namespace GiuaKi_LT_Desktop
             ConnectToDatabase();
         }
 
-        //add a new databse
+
 
         private void ConnectToDatabase()
         {
-            
+
             var connectionString = "Data Source=your_database_file.db";
 
             using (var connection = new SqliteConnection(connectionString))
             {
                 connection.Open();
 
-                
+
                 var command = connection.CreateCommand();
                 command.CommandText =
                 @"
@@ -33,8 +33,33 @@ namespace GiuaKi_LT_Desktop
                     ";
                 command.ExecuteNonQuery();
 
-                
+
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HoTen_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
