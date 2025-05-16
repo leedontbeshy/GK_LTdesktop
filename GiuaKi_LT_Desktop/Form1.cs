@@ -141,7 +141,10 @@ namespace GiuaKi_LT_Desktop
 
         private void label1_Click(object sender, System.EventArgs e) { }
         private void button1_Click(object sender, System.EventArgs e) { }
-        private void button1_Click_1(object sender, System.EventArgs e) { }
+        private void button1_Click_1(object sender, System.EventArgs e) {
+            SaveDataToFile();
+            Environment.Exit(0);
+        }
         private void HoTen_label_Click(object sender, System.EventArgs e) { }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
         private void Form1_Load(object sender, System.EventArgs e) { }
