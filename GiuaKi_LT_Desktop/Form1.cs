@@ -1,5 +1,4 @@
-﻿using Microsoft.Data.Sqlite;
-using System.IO;
+﻿using System.IO;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -22,6 +21,16 @@ namespace GiuaKi_LT_Desktop
         public Form1()
         {
             InitializeComponent();
+
+           
+            if (dataGridView1.Columns.Count == 0)
+            {
+                dataGridView1.Columns.Add("MaSo", "Mã số");
+                dataGridView1.Columns.Add("HoTen", "Họ tên");
+                dataGridView1.Columns.Add("NgaySinh", "Ngày sinh");
+                dataGridView1.Columns.Add("Email", "Email");
+            }
+
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             Them_BT.Click += Them_BT_Click;
             Luu_BT.Click += Luu_BT_Click;
@@ -73,7 +82,7 @@ namespace GiuaKi_LT_Desktop
             }
         }
 
-        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        private void dataGridView1_SelectionChanged(object sender, System.EventArgs e)
         {
             if (dataGridView1.CurrentRow != null && !dataGridView1.CurrentRow.IsNewRow)
             {
@@ -84,7 +93,7 @@ namespace GiuaKi_LT_Desktop
             }
         }
 
-        private void Them_BT_Click(object sender, EventArgs e)
+        private void Them_BT_Click(object sender, System.EventArgs e)
         {
             if (!isAdding)
             {
@@ -104,7 +113,7 @@ namespace GiuaKi_LT_Desktop
             }
         }
 
-        private void Luu_BT_Click(object sender, EventArgs e)
+        private void Luu_BT_Click(object sender, System.EventArgs e)
         {
             if (isAdding)
             {
@@ -130,12 +139,12 @@ namespace GiuaKi_LT_Desktop
             base.OnFormClosing(e);
         }
 
-        // Các hàm sự kiện không sử dụng có thể để trống hoặc xóa nếu không cần thiết
-        private void label1_Click(object sender, EventArgs e) { }
-        private void button1_Click(object sender, EventArgs e) { }
-        private void button1_Click_1(object sender, EventArgs e) { }
-        private void HoTen_label_Click(object sender, EventArgs e) { }
+       
+        private void label1_Click(object sender, System.EventArgs e) { }
+        private void button1_Click(object sender, System.EventArgs e) { }
+        private void button1_Click_1(object sender, System.EventArgs e) { }
+        private void HoTen_label_Click(object sender, System.EventArgs e) { }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
-        private void Form1_Load(object sender, EventArgs e) { }
+        private void Form1_Load(object sender, System.EventArgs e) { }
     }
 }
