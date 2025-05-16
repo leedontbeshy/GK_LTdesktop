@@ -13,5 +13,7 @@ namespace GiuaKi_LT_Desktop
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
         }
+
+        //test
     }
 }
