@@ -1,5 +1,6 @@
-using Microsoft.Data.Sqlite;
-//using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.Data.Sqlite;
+using System.IO;
+
 
 namespace GiuaKi_LT_Desktop
 {
@@ -8,8 +9,52 @@ namespace GiuaKi_LT_Desktop
         public Form1()
         {
             InitializeComponent();
+            LoadDataFromFile();
             ConnectToDatabase();
+            SaveDataToFile();
         }
+        private string filePath = "dulieu.txt";
+
+
+        private void LoadDataFromFile()
+        {
+            if (File.Exists(filePath))
+            {
+                var lines = File.ReadAllLines(filePath);
+                dataGridView1.Rows.Clear();
+                foreach (var line in lines)
+                {
+                    var parts = line.Split('|');
+                    if (parts.Length == 4)
+                    {
+                        dataGridView1.Rows.Add(parts[0], parts[1], parts[2], parts[3]);
+                    }
+                }
+            }
+        }
+
+
+        private void SaveDataToFile()
+        {
+            using (var writer = new StreamWriter(filePath, false))
+            {
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (!row.IsNewRow)
+                    {
+                        var values = new string[]
+                        {
+                    row.Cells[0].Value?.ToString() ?? "",
+                    row.Cells[1].Value?.ToString() ?? "",
+                    row.Cells[2].Value?.ToString() ?? "",
+                    row.Cells[3].Value?.ToString() ?? ""
+                        };
+                        writer.WriteLine(string.Join("|", values));
+                    }
+                }
+            }
+        }
+
 
 
 
